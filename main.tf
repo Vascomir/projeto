@@ -6,7 +6,7 @@ terraform {
     }
   }
 
-  cloud {
+  backend "remote" {
         organization = "VascoORG"
         workspaces {
           name = "projeto"
