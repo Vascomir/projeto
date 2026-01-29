@@ -6,10 +6,10 @@ terraform {
     }
   }
 
-  backend "remote" {
+  cloud {
         organization = "VascoORG"
         workspaces {
-          name = "projeto"
+          name = "ntt"
         }
   }
 }
