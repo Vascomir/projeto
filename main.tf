@@ -31,7 +31,6 @@ data "google_compute_network" "my-network" {
   #address_type  = "INTERNAL"
   #prefix_length = 16
   #network       = data.google_compute_network.my-network.id
-
 #}
 
 data "google_compute_global_address" "my_address" {
@@ -41,7 +40,7 @@ data "google_compute_global_address" "my_address" {
 resource "google_service_networking_connection" "private_vpc_connection" {
   network                 = data.google_compute_network.my-network.id
   service                 = "servicenetworking.googleapis.com"
-  reserved_peering_ranges = [google_compute_global_address.my_address.name]
+  reserved_peering_ranges = [data.google_compute_global_address.my_address.name]
 }
 
 resource "google_sql_database_instance" "instance" {
