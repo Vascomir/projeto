@@ -17,6 +17,7 @@ terraform {
 
 provider "google" {
   project = "olas-485615"
+  region  = "europe-west12"
   #credentials = "key.json"
 }
 
