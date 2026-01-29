@@ -6,12 +6,12 @@ terraform {
     }
   }
 
-  backend "remote" {
-        organization = "VascoORG"
-        workspaces {
-          name = "projeto"
-        }
-  }
+  #backend "remote" {
+   #     organization = "VascoORG"
+    #    workspaces {
+     #     name = "projeto"
+      #  }
+  #}
 }
 
 
