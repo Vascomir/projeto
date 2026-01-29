@@ -5,13 +5,6 @@ terraform {
       version = "7.17.0"
     }
   }
-
-  cloud {
-        organization = "VascoORG"
-        workspaces {
-          name = "ntt"
-        }
-  }
 }
 
 
