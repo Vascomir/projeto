@@ -17,11 +17,11 @@ terraform {
 
 provider "google" {
   project = "olas-485615"
-  region  = "europe-west12"
+  #region  = "europe-west12"
   #credentials = "key.json"
 }
 
-a 
+
 data "google_compute_network" "my-network" {
   name = "vpc-network"
 }
