@@ -72,7 +72,7 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
       with:
-        cli_config_credentials_token: ${{ secrets.TOKEN }}
+        cli_config_credentials_token: ${{ secrets.TOKEN_API }}
 
     - name: Authenticate to GCP
       uses: google-github-actions/auth@v2
