@@ -5,7 +5,15 @@ terraform {
       version = "7.17.0"
     }
   }
+
+  backend "remote" {
+        organization = "VascoORG"
+        workspaces {
+          name = "projeto"
+        }
+  }
 }
+
 
 provider "google" {
   project = "olas-485615"
