@@ -21,7 +21,7 @@ provider "google" {
   #credentials = "key.json"
 }
 
-
+a 
 data "google_compute_network" "my-network" {
   name = "vpc-network"
 }
