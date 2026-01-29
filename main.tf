@@ -17,7 +17,7 @@ terraform {
 
 provider "google" {
   project = "olas-485615"
-  credentials = "key.json"
+  #credentials = "key.json"
 }
 
 
