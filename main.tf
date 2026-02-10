@@ -9,7 +9,7 @@ terraform {
 
 
 provider "google" {
-  project = "olas-485615"
+  project = "focal-caster-486609-j6"
   credentials = "key.json"
 }
 
